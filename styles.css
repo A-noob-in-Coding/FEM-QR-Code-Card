@@ -1,0 +1,120 @@
+:root
+{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --FontSizeP: 15px;
+}
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-gray);
+    font-family: "Outfit";
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+.card-container
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--White);
+    height: 50%;
+    width: 40%;
+    padding: 1rem;
+    border: 2px solid var(--White);
+    border-radius: 10px;
+}
+
+.qr-code-container
+{
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.qr-code-container img
+{
+    border-radius: 6px;
+ }
+
+
+.text-container-primary
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+.text-container-secondary
+{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.attribution
+{
+    text-align: center;
+}
+
+.attribution a
+{
+    color: var(--Grayish-blue);
+    text-decoration: none;    
+}
+
+.attribution a:hover,
+.attribution a:active
+{
+    color: var(--Dark-blue);
+}
+
+@media  screen and (max-width: 768px) {
+    body
+    {
+        max-height: 100vh;
+    }
+    .card-container
+    {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-container
+    {
+        height: 100%;
+        width: 70%;
+    }
+    .text-container-primary
+    {
+        font-size: 2rem;
+    }
+    .text-container-secondary,
+    .attribution 
+    {
+        font-size: 1.5rem;
+    }
+}
